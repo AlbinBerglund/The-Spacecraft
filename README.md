@@ -1,3 +1,2 @@
 # The-Spacecraft
-
-## Arcada information technology project
+Arcada information technology project
