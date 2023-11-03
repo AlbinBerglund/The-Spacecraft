@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      90513-universe-galaxy-space_0: 4955925254707366986
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

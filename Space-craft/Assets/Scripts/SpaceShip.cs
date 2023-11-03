@@ -18,33 +18,33 @@ public class CarController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(velocity * Time.deltaTime);
         KeyboardControl();
 
-        Debug.Log(Vector2.Distance(transform.position, star_0.transform.position));
 
     }
 
     void KeyboardControl()
     {
-        if(Input.GetKey(KeyCode.RightArrow) == true)
+        int Speed = 4;
+
+        if (Input.GetKey(KeyCode.RightArrow) == true)
         {
-            transform.Translate(2f * Time.deltaTime, 0, 0);
+            transform.Translate(Speed * Time.deltaTime, 0, 0);
         }
 
          if(Input.GetKey(KeyCode.LeftArrow) == true)
         {
-            transform.Translate(-2f * Time.deltaTime, 0, 0);
+            transform.Translate(-Speed * Time.deltaTime, 0, 0);
         }
 
         if (Input.GetKey(KeyCode.UpArrow) == true)
         {
-            transform.Translate(0, 2f * Time.deltaTime, 0);
+            transform.Translate(0, Speed * Time.deltaTime, 0);
         }
 
         if (Input.GetKey(KeyCode.DownArrow) == true)
         {
-            transform.Translate(0, -2f * Time.deltaTime, 0);
+            transform.Translate(0, -Speed * Time.deltaTime, 0);
         }
     }
 }
